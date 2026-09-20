@@ -39,6 +39,7 @@ body {
 .row label {
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
   gap: 24px;
 }
 
@@ -52,14 +53,22 @@ body {
   background-color: rgba(181, 181, 181, 0.259);
 }
 
+.input:valid {
+  border: 1px solid green;
+}
+
+.input:invalid {
+  border: solid 1px red;
+}
+
 .labelText {
   width: 190px;
   min-width: 190px;
 }
 
-h1 {
+.formTitle {
   font-size: 45px;
-  font-weight: 800; 
+  font-weight: 800;
 }
 
 .topInfo {
@@ -90,3 +99,5 @@ h1 {
   text-underline-offset: 6px;
   transition: text-decoration-color 0.3s ease;
 }
+
+

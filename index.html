@@ -3,67 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/index.js" defer ></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/index.js"></script>
     <title>HTML-Forms</title>
-  <body>
-    <div class="container">
-      <div class="topInfo">
-      <h1>Contact form</h1>
-      <p>Please fill in your information and we`ll be sending your order.</p>
+    <body>
+      <div class="container">
+        <div class="topInfo">
+          <h2 class="formTitle">Contact form</h2>
+          <p>Please fill in your information and we`ll be sending your order.</p>
+        </div>
+        <form action="#" class="formContainer">
+          <div class="row">
+            <label class="name">
+              <span class="labelText">Your name</span>
+              <input
+                class="input"
+                type="text"
+                name="first name"
+                placeholder="first name"
+                pattern="[A-Z][a-z]{2,19}"
+                required
+                autofocus
+              />
+              <input
+                class="input"
+                type="text"
+                name="last name"
+                placeholder="last name"
+                pattern="[A-Z][a-z]{1,19}"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="email">
+              <span class="labelText">Your email</span>
+              <input class="input" type="email" name="email" placeholder="your_mail@gmail.com" />
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="phone">
+              <span class="labelText">Phone *</span>
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                placeholder="000"
+                pattern="\d{3}"
+                required
+              />
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                placeholder="000"
+                pattern="\d{3}"
+                required
+              />
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                placeholder="0000"
+                pattern="\d{4}"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="messageSubject">
+              <span class="labelText">Message subject *</span>
+              <select class="input" name="message subject">
+                <option value="">Other</option>
+                <option value="">Technical</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="message"
+              ><span class="labelText">Message *</span>
+              <textarea class="input" type="text" name="Message" required></textarea>
+            </label>
+          </div>
+          <div class="line"></div>
+          <button type="submit" class="submitBtn">submit form</button>
+        </form>
       </div>
-      <form action="#" class="formContainer">
-        <div class="row">
-        <label class="name"
-          > <span class="labelText">Your name</span>
-          <input
-            class="input"
-            type="text"
-            name="first name"
-            placeholder="first name"
-            pattern="[A-Z][a-z]{1,19}"
-            autofocus
-          />
-          <input class="input" type="text" name="last name" placeholder="last name" />
-        </label>
-        </div>
-
-        <div class="row">
-        <label class="email"
-          > <span class="labelText">Your email</span>
-          <input class="input" type="email" name="email" placeholder="your_mail@gmail.com" />
-        </label>
-        </div>
-        
-        <div class="row">
-        <label class="phone"
-          > <span class="labelText">Phone *</span>
-          <input class="input" type="tel" name="phone" placeholder="000" required />
-          <input class="input" type="tel" name="phone" placeholder="000" required />
-          <input class="input" type="tel" name="phone" placeholder="0000" required />
-        </label>
-        </div>
-
-        <div class="row">
-        <label class="messageSubject"
-          > <span class="labelText">Message subject *</span>
-          <select class="input" name="message subject">
-            <option value="">Other</option>
-          </select>
-        </label>
-        </div>
-        
-        <div class="row">
-        <label class="message"
-          ><span class="labelText">Message *</span>
-          <textarea class="input" type="text" name="Message" required></textarea> 
-        </label>
-        </div>
-<div class="line"></div>
-        <button type="submit" class="submitBtn">submit form</button>
-      </form>
-    </div>
+    </body>
   </head>
-  </body>
 </html>
