@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("../images/photo-1625225230517-7426c1be750c.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(162, 161, 161);
+  /* max-width: 1000px; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 200px; */
+}
+
+.container {
+  border: solid grey 2px;
+  border-radius: 20px;
+  background-color: rgba(152, 152, 152, 0.251);
+  backdrop-filter: blur(20px);
+  width: 60%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.row label {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.input {
+  width: 100%;
+  min-height: 50px;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px;
+  background-color: rgba(181, 181, 181, 0.259);
+}
+
+.labelText {
+  width: 190px;
+  min-width: 190px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.topInfo {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  padding-bottom: 70px;
+}
+
+.line {
+  border: solid 1px rgb(152, 152, 152);
+}
+
+.submitBtn {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: rgba(181, 181, 181, 0.259);
+}
+
+.submitBtn:hover {
+  background-color: rgba(121, 121, 121, 0.259);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  transition: text-decoration-color 0.3s ease;
+}
