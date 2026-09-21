@@ -7,10 +7,12 @@ form.addEventListener("submit", (e) => {
   const data = new FormData(form);
   console.log([...data.keys()]);
 
-  const message = data.get("Message").replace(/\s+/g, " ");
-  console.log(message);
-
-  const number = data.getAll("phone").join("");
-
-  console.log(number);
+  const result = {
+    name: `${data.get("first name")} ${data.get("last name")}`,
+    email: `${data.get("email")}`,
+    phone: `${data.getAll("phone").join("")}`,
+    subject: `${data.get("message subject")}`,
+    message: `${data.get("message").trim().replace(/\s+/g, " ")}`,
+  };
+  console.log(result);
 });

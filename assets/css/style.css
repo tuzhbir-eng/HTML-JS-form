@@ -39,31 +39,39 @@ body {
 .row label {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 24px;
+}
+
+.labelText {
+  width: 140px;
+  min-width: 140px;
 }
 
 .input {
   width: 100%;
+
   min-height: 50px;
-  height: 100%;
   border-radius: 10px;
   font-size: 16px;
   padding: 15px;
   background-color: rgba(181, 181, 181, 0.259);
+  min-width: 0;
 }
 
-.input:valid {
+.input:user-valid {
   border: 1px solid green;
 }
 
-.input:invalid {
+.input:user-invalid {
   border: solid 1px red;
 }
 
-.labelText {
-  width: 190px;
-  min-width: 190px;
+@media screen and (max-width: 950px) {
+  .row label {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
 }
 
 .formTitle {
@@ -89,15 +97,13 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
-  background-color: rgba(181, 181, 181, 0.259);
+  background: linear-gradient(to bottom, #2850508c, #6b8f8f77);
 }
 
 .submitBtn:hover {
-  background-color: rgba(121, 121, 121, 0.259);
+  background-color: rgba(98, 98, 98, 0.259);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 6px;
   transition: text-decoration-color 0.3s ease;
 }
-
-

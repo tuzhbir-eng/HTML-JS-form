@@ -23,6 +23,7 @@
                 name="first name"
                 placeholder="first name"
                 pattern="[A-Z][a-z]{2,19}"
+                maxlength="16"
                 required
                 autofocus
               />
@@ -32,6 +33,7 @@
                 name="last name"
                 placeholder="last name"
                 pattern="[A-Z][a-z]{1,19}"
+                maxlength="16"
                 required
               />
             </label>
@@ -53,6 +55,7 @@
                 name="phone"
                 placeholder="000"
                 pattern="\d{3}"
+                maxlength="3"
                 required
               />
               <input
@@ -61,6 +64,7 @@
                 name="phone"
                 placeholder="000"
                 pattern="\d{3}"
+                maxlength="3"
                 required
               />
               <input
@@ -69,6 +73,7 @@
                 name="phone"
                 placeholder="0000"
                 pattern="\d{4}"
+                maxlength="4"
                 required
               />
             </label>
@@ -78,8 +83,8 @@
             <label class="messageSubject">
               <span class="labelText">Message subject *</span>
               <select class="input" name="message subject">
-                <option value="">Other</option>
-                <option value="">Technical</option>
+                <option value="other">Other</option>
+                <option value="tech">Technical</option>
               </select>
             </label>
           </div>
@@ -87,7 +92,7 @@
           <div class="row">
             <label class="message"
               ><span class="labelText">Message *</span>
-              <textarea class="input" type="text" name="Message" required></textarea>
+              <textarea class="input" type="text" name="message" required></textarea>
             </label>
           </div>
           <div class="line"></div>
